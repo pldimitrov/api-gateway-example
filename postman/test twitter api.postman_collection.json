@@ -1,0 +1,789 @@
+{
+	"info": {
+		"_postman_id": "373b0661-0e1d-4704-8240-34e51b868ee5",
+		"name": "test twitter api",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "user1",
+			"item": [
+				{
+					"name": "/tweets",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				},
+				{
+					"name": "/my_tweets",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				},
+				{
+					"name": "/tweet",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "user1 test tweet"
+						},
+						"url": {
+							"raw": "https://jx17zqhn5c.execute-api.us-east-1.amazonaws.com/prod/tweet",
+							"protocol": "https",
+							"host": [
+								"jx17zqhn5c",
+								"execute-api",
+								"us-east-1",
+								"amazonaws",
+								"com"
+							],
+							"path": [
+								"prod",
+								"tweet"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"auth": {
+				"type": "oauth2",
+				"oauth2": [
+					{
+						"key": "headerPrefix",
+						"value": "",
+						"type": "string"
+					},
+					{
+						"key": "challengeAlgorithm",
+						"value": "S256",
+						"type": "string"
+					},
+					{
+						"key": "scope",
+						"value": "phone email openid profile",
+						"type": "string"
+					},
+					{
+						"key": "redirect_uri",
+						"value": "https://example.com",
+						"type": "string"
+					},
+					{
+						"key": "grant_type",
+						"value": "implicit",
+						"type": "string"
+					},
+					{
+						"key": "clientId",
+						"value": "6injqg7fpruq5hcafuki2tu0jh",
+						"type": "string"
+					},
+					{
+						"key": "authUrl",
+						"value": "https://twitter-api-example-test.auth.us-east-1.amazoncognito.com/login",
+						"type": "string"
+					},
+					{
+						"key": "addTokenTo",
+						"value": "header",
+						"type": "string"
+					},
+					{
+						"key": "client_authentication",
+						"value": "body",
+						"type": "string"
+					}
+				]
+			},
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				}
+			]
+		},
+		{
+			"name": "user2",
+			"item": [
+				{
+					"name": "/tweets",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://jx17zqhn5c.execute-api.us-east-1.amazonaws.com/prod/tweets",
+							"protocol": "https",
+							"host": [
+								"jx17zqhn5c",
+								"execute-api",
+								"us-east-1",
+								"amazonaws",
+								"com"
+							],
+							"path": [
+								"prod",
+								"tweets"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/my_tweets",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://jx17zqhn5c.execute-api.us-east-1.amazonaws.com/prod/my_tweets",
+							"protocol": "https",
+							"host": [
+								"jx17zqhn5c",
+								"execute-api",
+								"us-east-1",
+								"amazonaws",
+								"com"
+							],
+							"path": [
+								"prod",
+								"my_tweets"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/tweet",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "user2 test tweet"
+						},
+						"url": {
+							"raw": "https://jx17zqhn5c.execute-api.us-east-1.amazonaws.com/prod/tweet",
+							"protocol": "https",
+							"host": [
+								"jx17zqhn5c",
+								"execute-api",
+								"us-east-1",
+								"amazonaws",
+								"com"
+							],
+							"path": [
+								"prod",
+								"tweet"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"auth": {
+				"type": "oauth2",
+				"oauth2": [
+					{
+						"key": "headerPrefix",
+						"value": "",
+						"type": "string"
+					},
+					{
+						"key": "challengeAlgorithm",
+						"value": "S256",
+						"type": "string"
+					},
+					{
+						"key": "scope",
+						"value": "phone email openid profile",
+						"type": "string"
+					},
+					{
+						"key": "redirect_uri",
+						"value": "https://example.com",
+						"type": "string"
+					},
+					{
+						"key": "grant_type",
+						"value": "implicit",
+						"type": "string"
+					},
+					{
+						"key": "clientId",
+						"value": "6injqg7fpruq5hcafuki2tu0jh",
+						"type": "string"
+					},
+					{
+						"key": "authUrl",
+						"value": "https://twitter-api-example-test.auth.us-east-1.amazoncognito.com/login",
+						"type": "string"
+					},
+					{
+						"key": "addTokenTo",
+						"value": "header",
+						"type": "string"
+					},
+					{
+						"key": "client_authentication",
+						"value": "body",
+						"type": "string"
+					}
+				]
+			},
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				}
+			]
+		},
+		{
+			"name": "user3",
+			"item": [
+				{
+					"name": "/tweets",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://jx17zqhn5c.execute-api.us-east-1.amazonaws.com/prod/tweets",
+							"protocol": "https",
+							"host": [
+								"jx17zqhn5c",
+								"execute-api",
+								"us-east-1",
+								"amazonaws",
+								"com"
+							],
+							"path": [
+								"prod",
+								"tweets"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/my_tweets",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://jx17zqhn5c.execute-api.us-east-1.amazonaws.com/prod/my_tweets",
+							"protocol": "https",
+							"host": [
+								"jx17zqhn5c",
+								"execute-api",
+								"us-east-1",
+								"amazonaws",
+								"com"
+							],
+							"path": [
+								"prod",
+								"my_tweets"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/tweet",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "user3 test tweet"
+						},
+						"url": {
+							"raw": "https://jx17zqhn5c.execute-api.us-east-1.amazonaws.com/prod/tweet",
+							"protocol": "https",
+							"host": [
+								"jx17zqhn5c",
+								"execute-api",
+								"us-east-1",
+								"amazonaws",
+								"com"
+							],
+							"path": [
+								"prod",
+								"tweet"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"auth": {
+				"type": "oauth2",
+				"oauth2": [
+					{
+						"key": "headerPrefix",
+						"value": "",
+						"type": "string"
+					},
+					{
+						"key": "challengeAlgorithm",
+						"value": "S256",
+						"type": "string"
+					},
+					{
+						"key": "scope",
+						"value": "phone email openid profile",
+						"type": "string"
+					},
+					{
+						"key": "redirect_uri",
+						"value": "https://example.com",
+						"type": "string"
+					},
+					{
+						"key": "grant_type",
+						"value": "implicit",
+						"type": "string"
+					},
+					{
+						"key": "clientId",
+						"value": "6injqg7fpruq5hcafuki2tu0jh",
+						"type": "string"
+					},
+					{
+						"key": "authUrl",
+						"value": "https://twitter-api-example-test.auth.us-east-1.amazoncognito.com/login",
+						"type": "string"
+					},
+					{
+						"key": "addTokenTo",
+						"value": "header",
+						"type": "string"
+					},
+					{
+						"key": "client_authentication",
+						"value": "body",
+						"type": "string"
+					}
+				]
+			},
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				}
+			]
+		},
+		{
+			"name": "user4",
+			"item": [
+				{
+					"name": "/tweets",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://jx17zqhn5c.execute-api.us-east-1.amazonaws.com/prod/tweets",
+							"protocol": "https",
+							"host": [
+								"jx17zqhn5c",
+								"execute-api",
+								"us-east-1",
+								"amazonaws",
+								"com"
+							],
+							"path": [
+								"prod",
+								"tweets"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/my_tweets",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://jx17zqhn5c.execute-api.us-east-1.amazonaws.com/prod/my_tweets",
+							"protocol": "https",
+							"host": [
+								"jx17zqhn5c",
+								"execute-api",
+								"us-east-1",
+								"amazonaws",
+								"com"
+							],
+							"path": [
+								"prod",
+								"my_tweets"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/tweet",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "user4 test tweet"
+						},
+						"url": {
+							"raw": "https://jx17zqhn5c.execute-api.us-east-1.amazonaws.com/prod/tweet",
+							"protocol": "https",
+							"host": [
+								"jx17zqhn5c",
+								"execute-api",
+								"us-east-1",
+								"amazonaws",
+								"com"
+							],
+							"path": [
+								"prod",
+								"tweet"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"auth": {
+				"type": "oauth2",
+				"oauth2": [
+					{
+						"key": "headerPrefix",
+						"value": "",
+						"type": "string"
+					},
+					{
+						"key": "challengeAlgorithm",
+						"value": "S256",
+						"type": "string"
+					},
+					{
+						"key": "scope",
+						"value": "phone email openid profile",
+						"type": "string"
+					},
+					{
+						"key": "redirect_uri",
+						"value": "https://example.com",
+						"type": "string"
+					},
+					{
+						"key": "grant_type",
+						"value": "implicit",
+						"type": "string"
+					},
+					{
+						"key": "clientId",
+						"value": "6injqg7fpruq5hcafuki2tu0jh",
+						"type": "string"
+					},
+					{
+						"key": "authUrl",
+						"value": "https://twitter-api-example-test.auth.us-east-1.amazoncognito.com/login",
+						"type": "string"
+					},
+					{
+						"key": "addTokenTo",
+						"value": "header",
+						"type": "string"
+					},
+					{
+						"key": "client_authentication",
+						"value": "body",
+						"type": "string"
+					}
+				]
+			},
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				}
+			]
+		},
+		{
+			"name": "user5",
+			"item": [
+				{
+					"name": "/tweets",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://jx17zqhn5c.execute-api.us-east-1.amazonaws.com/prod/tweets",
+							"protocol": "https",
+							"host": [
+								"jx17zqhn5c",
+								"execute-api",
+								"us-east-1",
+								"amazonaws",
+								"com"
+							],
+							"path": [
+								"prod",
+								"tweets"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/my_tweets",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://jx17zqhn5c.execute-api.us-east-1.amazonaws.com/prod/my_tweets",
+							"protocol": "https",
+							"host": [
+								"jx17zqhn5c",
+								"execute-api",
+								"us-east-1",
+								"amazonaws",
+								"com"
+							],
+							"path": [
+								"prod",
+								"my_tweets"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/tweet",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "user4 test tweet"
+						},
+						"url": {
+							"raw": "https://jx17zqhn5c.execute-api.us-east-1.amazonaws.com/prod/tweet",
+							"protocol": "https",
+							"host": [
+								"jx17zqhn5c",
+								"execute-api",
+								"us-east-1",
+								"amazonaws",
+								"com"
+							],
+							"path": [
+								"prod",
+								"tweet"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"auth": {
+				"type": "oauth2",
+				"oauth2": [
+					{
+						"key": "headerPrefix",
+						"value": "",
+						"type": "string"
+					},
+					{
+						"key": "challengeAlgorithm",
+						"value": "S256",
+						"type": "string"
+					},
+					{
+						"key": "scope",
+						"value": "phone email openid profile",
+						"type": "string"
+					},
+					{
+						"key": "redirect_uri",
+						"value": "https://example.com",
+						"type": "string"
+					},
+					{
+						"key": "grant_type",
+						"value": "implicit",
+						"type": "string"
+					},
+					{
+						"key": "clientId",
+						"value": "6injqg7fpruq5hcafuki2tu0jh",
+						"type": "string"
+					},
+					{
+						"key": "authUrl",
+						"value": "https://twitter-api-example-test.auth.us-east-1.amazoncognito.com/login",
+						"type": "string"
+					},
+					{
+						"key": "addTokenTo",
+						"value": "header",
+						"type": "string"
+					},
+					{
+						"key": "client_authentication",
+						"value": "body",
+						"type": "string"
+					}
+				]
+			},
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				}
+			]
+		}
+	],
+	"auth": {
+		"type": "oauth2",
+		"oauth2": [
+			{
+				"key": "headerPrefix",
+				"value": "",
+				"type": "string"
+			},
+			{
+				"key": "client_authentication",
+				"value": "header",
+				"type": "string"
+			},
+			{
+				"key": "challengeAlgorithm",
+				"value": "S256",
+				"type": "string"
+			},
+			{
+				"key": "scope",
+				"value": "phone email openid profile",
+				"type": "string"
+			},
+			{
+				"key": "redirect_uri",
+				"value": "https://example.com",
+				"type": "string"
+			},
+			{
+				"key": "grant_type",
+				"value": "implicit",
+				"type": "string"
+			},
+			{
+				"key": "clientId",
+				"value": "6injqg7fpruq5hcafuki2tu0jh",
+				"type": "string"
+			},
+			{
+				"key": "authUrl",
+				"value": "https://twitter-api-example-test.auth.us-east-1.amazoncognito.com/login",
+				"type": "string"
+			},
+			{
+				"key": "addTokenTo",
+				"value": "header",
+				"type": "string"
+			}
+		]
+	},
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	]
+}

@@ -20,6 +20,7 @@ cdk synth && cdk deploy
 
 
 ## Testing
+A postman collection (importable as json) is available under `./postman` to make testing easier. The login and API endpoint URLs are already set up but it's necessary that you log in for each user ("folder" in the collection) individually to set the corresponding Oauth 2.0 JWT token.
 
 Due to a bug in Postman (or rather an incompatibility with Cognito) the following needs to be done to set up the access token correctly.
 - upon clicking `Get New Access Token` under the `Authorization` tab for each user (directory in the Postman collection), follow the instructions and enter username/password.

@@ -12,7 +12,22 @@
 					"name": "/tweets",
 					"request": {
 						"method": "GET",
-						"header": []
+						"header": [],
+						"url": {
+							"raw": "https://jx17zqhn5c.execute-api.us-east-1.amazonaws.com/prod/tweets",
+							"protocol": "https",
+							"host": [
+								"jx17zqhn5c",
+								"execute-api",
+								"us-east-1",
+								"amazonaws",
+								"com"
+							],
+							"path": [
+								"prod",
+								"tweets"
+							]
+						}
 					},
 					"response": []
 				},
@@ -20,7 +35,22 @@
 					"name": "/my_tweets",
 					"request": {
 						"method": "GET",
-						"header": []
+						"header": [],
+						"url": {
+							"raw": "https://jx17zqhn5c.execute-api.us-east-1.amazonaws.com/prod/my_tweets",
+							"protocol": "https",
+							"host": [
+								"jx17zqhn5c",
+								"execute-api",
+								"us-east-1",
+								"amazonaws",
+								"com"
+							],
+							"path": [
+								"prod",
+								"my_tweets"
+							]
+						}
 					},
 					"response": []
 				},

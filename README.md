@@ -30,4 +30,3 @@ Due to a bug in Postman (or rather an incompatibility with Cognito) the followin
 - paste `id_token` into the selected field in Postman, remove newline if needed
 
 Use the requests (grouped by user/auth details) to test all endpoints.
-- 
